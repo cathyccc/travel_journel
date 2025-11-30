@@ -1,6 +1,7 @@
 html,
 body {
   margin: 0;
+  font-family: "Inter";
 }
 
 #root {
@@ -12,7 +13,6 @@ body {
 .header {
   background: #F55A5A;
   height: 55px;
-  font-family: "Inter";
   color: white;
   display: flex;
   align-items: center;
@@ -28,4 +28,80 @@ body {
 .navbar {
   height: 24px;
   display: flex;
+}
+
+article.entry {
+  display: flex;
+  width: 470px;
+  height: 168px;
+  margin: 2em auto;
+}
+
+.main-img-card {
+  height: 168px;
+  width: 125px;
+  overflow: hidden;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.main-img-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-left: 2em;
+  padding: 5px;
+}
+
+article.marker {
+  height: 9.55px;
+  width: 7px;
+}
+
+.country-name {
+  margin-left: 4px;
+  margin-right: 12px;
+  font-size: 0.7rem;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  color: #2B283A;
+}
+
+.country-details a {
+  font-size: 0.7rem;
+  color: #2B283A;
+}
+
+.country-details a:visited {
+  color: #918e98;
+}
+
+.location-name {
+  font-size: 1.7r5em;
+  font-weight: 700;
+  margin: 0.25em 0;
+}
+
+p.dates {
+  font-weight: bold;
+  font-size: 0.75rem;
+  margin: 0 0 0.75em 0;
+}
+
+p.entry-text {
+  font-size: 0.8rem;
+  text-align: left;
+  width: 370px;
+  margin: 10px 0 0 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
